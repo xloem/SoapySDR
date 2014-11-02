@@ -48,7 +48,7 @@ add_subdirectory(apps)
 add_subdirectory(docs)
 
 ########################################################################
-# Python support (optional)
+# Python bindings (optional)
 ########################################################################
 message(STATUS "")
 message(STATUS "#############################################")
@@ -57,6 +57,17 @@ message(STATUS "#############################################")
 message(STATUS "")
 message(STATUS "Enabling optional Python bindings if possible...")
 add_subdirectory(python)
+
+########################################################################
+# Java bindings (optional)
+########################################################################
+message(STATUS "")
+message(STATUS "#############################################")
+message(STATUS "## Begin configuration for Java support...")
+message(STATUS "#############################################")
+message(STATUS "")
+message(STATUS "Enabling optional Java bindings if possible...")
+add_subdirectory(java)
 
 ########################################################################
 # uninstall target
